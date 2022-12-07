@@ -24,7 +24,19 @@ I am 24 years old, I live in Russia (Moscow). Right now I'm working as a junior 
 
 ### Code Examples: 
 ```javascript
-
+function sumTwoSmallestNumbers(numbers) {  
+  let min = numbers[0];
+  let secondMin = numbers[1];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      secondMin = min;
+      min = numbers[i];
+    } else if (numbers[i] < secondMin) {
+      secondMin = numbers[i];
+    }
+  }
+  return min + secondMin;
+}
 ```
 
 ### My experience: 
