@@ -4,7 +4,7 @@
 **Phone**: +79035390712;<br>
 **E-mail**: visneveckaya.a@gmail.com;<br>
 **Telegram**: @VishneveckayaSasha;<br>
-**Discord**: ;<br>
+**Discord**: Саша (@VishnevetskayaSasha);<br>
 
 ### About me:
 I am 24 years old, I live in Russia (Moscow). Right now I'm working as a junior web developer in a large company. It brings me great pleasure. I want to continue learning new things and conquer peaks.
@@ -23,20 +23,8 @@ I am 24 years old, I live in Russia (Moscow). Right now I'm working as a junior 
 - Github.
 
 ### Code Examples: 
-Sample code taken from my project: https://github.com/VishnevetskayaSasha/mesto 
 ```javascript
-// Открытие попапа редактирования профиля
-const  popupProfileEdit = () => {
-  const getUserInfo = userInfoProfile.getUserInfo();
-  popupName.value = getUserInfo.name // при открытии попапа отображать в инпутах информацию со страницы
-  popupDescription.value = getUserInfo.about
 
-
-  popupProfileValidator.resetValidation();
-  popupProfileWithForm.open();
-}
- 
-popupOpenBnt.addEventListener('click', popupProfileEdit);
 ```
 
 ### My experience: 
