@@ -4,18 +4,124 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>CV Вишневецкая Саша</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <div></div>
+  <header class="header">
+    <div class="header__content">
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="#about-me">About me</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Contacts</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#skills">Skills</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#code">Code</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#projects">Projects</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#education">Education</a> </li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#courses">Courses</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
   </header>
   <main>
-    <div></div>
+    <h1 class="main__header">Hi, I'm Alexandra Vishnevetskaya  👋 </h1>
+    <div class="main__content">
+      <div id="about-me" class="about-me">
+        <h2 class="subtitle">About me</h2>
+        <div class="about-me__content">
+          <img class="about-me__img" src="./avatar.jpg" alt="Аватарка">
+          <p class="about-me__text">I am 24 years old, I live in Russia (Moscow). Right now I'm working as a junior web developer in a large company. It brings me great pleasure. I want to continue learning new things and conquer peaks.</p>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <h2 class="subtitle">Contacts</h2>
+        <ul class="contact__list">
+          <li class="contact__text"><span class="contact__text_span">Phone:</span> +79035390712;</li>
+          <li class="contact__text"><span class="contact__text_span">E-mail:</span> visneveckaya.a@gmail.com;</li>
+          <li class="contact__text"><span class="contact__text_span">Telegram:</span> @VishneveckayaSasha;</li>
+          <li class="contact__text"><span class="contact__text_span">Discord:</span> Саша (@VishnevetskayaSasha);</li>
+        </ul>
+      </div>
+      <div id="skills" class="skills">
+        <h2 class="subtitle">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML5;</li>
+          <li class="skills__item">CSS3;</li>
+            <ul class="skills__list">
+              <li class="skills__item">Sass.</li>
+            </ul>
+          <li class="skills__item">БЭМ;</li>
+          <li class="skills__item">JavaScript;</li>
+          <li class="skills__item">React;</li>
+            <ul class="skills__list">
+              <li class="skills__item">JSX;</li>
+              <li class="skills__item">React Router.</li>
+            </ul>
+          <li class="skills__item">Webpack;</li>
+          <li class="skills__item">Figma;</li>
+          <li class="skills__item">Github.</li>
+        </ul>
+      </div>
+      <div id="code" class="code">
+        <h2 class="subtitle">Code</h2>
+        <pre>
+          <code class="code__text">
+            function sumTwoSmallestNumbers(numbers) {  
+              let min = numbers[0];
+              let secondMin = numbers[1];
+              for (let i = 1; i < numbers.length; i++) {
+                if (numbers[i] < min) {
+                  secondMin = min;
+                  min = numbers[i];
+                } else if (numbers[i] < secondMin) {
+                  secondMin = numbers[i];
+                }
+              }
+              return min + secondMin;
+            }
+          </code>
+        </pre>
+      </div>
+      <div id="projects" class="projects">
+        <h2 class="subtitle">Projects</h2>
+        <ol>
+          <li>All my personal projects can be viewed in my <a class="link" href="https://github.com/VishnevetskayaSasha" target="_blank">personal github card.</a></li>
+          <li>Now I work for <a class="link" href="https://erstvak.com/">Erstevak</a>. I create, maintain and optimize websites.</li>
+        </ol>
+      </div>
+      <div id="education" class="education">
+        <h2 class="subtitle">Education</h2>
+        <p class="education__text">Graduated from the <a class="link" href="https://new2.rea.ru/" target="_blank">Russian Economic University. G.V. Plekhanov, Moscow</a></p>
+        <ul class="education__list">
+          <li class="education__item">Economics of enterprises and organizations (bachelor's degree);</li>
+          <li class="education__item">Process Management Specialist (Specialist).</li>
+        </ul>  
+      </div>
+      <div id="courses" class="courses">
+        <h2 class="subtitle">Courses</h2>
+        <ol>
+          <li>Web-developer in <a class="link" href="https://practicum.yandex.ru/web/" target="_blank">yandex practicum </a></li>
+          <li>JS / FRONT-END. STAGE 0 in <a class="link" href="https://rs.school/js-stage0/" target="_blank">RS School</a> - (in process...)</li>
+        </ol>
+      </div>
+      <div id="languages" class="languages">
+        <h2 class="subtitle">Languages</h2>
+        <ul>
+          <li>Russian - native;</li>
+          <li>English - B1 (in process of improvement)</li>
+        </ul>
+      </div>
+    </div>
   </main>
-  <footer>
-    <div></div>
+  <footer class="footer">
+    <div class="footer__content">
+      <a href="https://github.com/VishnevetskayaSasha" target="_blank"><img class="footer__git" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Лого гитхаб"></a>
+      <p class="footer__text">2022</p>
+      <a href="https://rs.school/js/" target="_blank"><img class="footer__rs" src="https://rs.school/images/rs_school_js.svg" alt="Лого школы"></a>
+    </div>
   </footer>
 </body>
 </html>
+
